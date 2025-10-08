@@ -1,10 +1,9 @@
-﻿export default function Dashboard() {
+﻿export default function DashboardCenter() {
   return (
-    <div className="dashboard-container">
-      <h1>Dashboard - Real-time Metrics</h1>
-      {/* Destination: /dashboard */}
-      {/* Supabase: Connect to user_metrics table */}
-      {/* Implementation: WebSocket for real-time updates */}
+    <div className="dashboard" style={{borderColor: "#9CCC65"}}>
+      <a href="http://localhost:3000/dashboard" style={{color: "#388E3C"}}>
+        Access Dashboard - View Your Eco Metrics
+      </a>
     </div>
   )
 }
