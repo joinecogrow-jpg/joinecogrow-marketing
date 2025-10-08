@@ -1,10 +1,9 @@
-﻿export default function Features() {
+﻿export default function FeaturesMenu() {
   return (
-    <div className="features-grid">
-      <h1>590 Core Features</h1>
-      {/* Trees: 91 features - /features/trees */}
-      {/* DIY: 88 features - /features/diy */}
-      {/* Community: 87 features - /features/community */}
+    <div className="features-menu" style={{backgroundColor: "#689F38"}}>
+      <a href="http://localhost:3000/features" style={{color: "#7CB342"}}>
+        Explore 925 Features - Trees, Gaming, Community
+      </a>
     </div>
   )
 }
