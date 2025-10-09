@@ -1,51 +1,101 @@
 ﻿export default function Home() {
   return (
-    <main style={{minHeight:"100vh",background:"linear-gradient(to bottom,#f1f8e9,#e8f5e9)",padding:"2rem"}}>
-      {/* Logo Section */}
-      <div style={{display:"flex",justifyContent:"center",marginTop:"2rem"}}>
-        <div style={{width:"200px",height:"200px",borderRadius:"50%",border:"4px solid #9CCC65",display:"flex",alignItems:"center",justifyContent:"center",background:"white"}}>
-          <div style={{textAlign:"center"}}>
-            <div style={{fontSize:"3rem",color:"#388E3C"}}>🤚</div>
-            <div style={{fontSize:"2.5rem",marginTop:"-1rem",color:"#7CB342"}}>🌱</div>
-            <div style={{fontSize:"1.5rem"}}>🌍</div>
+    <main className="min-h-screen bg-gradient-to-b from-green-50 to-green-100">
+      {/* Logo Section - Matching Your Design */}
+      <div className="flex items-center justify-center pt-10">
+        <div className="relative">
+          {/* Circular Border */}
+          <div 
+            className="w-48 h-48 rounded-full border-4 flex items-center justify-center bg-white shadow-2xl"
+            style={{borderColor: "#9CCC65"}}
+          >
+            {/* Nurturing Hand and Growing Plant */}
+            <div className="flex flex-col items-center">
+              <div className="text-6xl" style={{color: "#388E3C"}}>🤚</div>
+              <div className="text-5xl -mt-6" style={{color: "#7CB342"}}>🌱</div>
+              <div className="text-3xl">🌍</div>
+            </div>
+          </div>
+          {/* Water Droplet */}
+          <div className="absolute -bottom-2 right-6">
+            <span className="text-3xl" style={{color: "#29B6F6"}}>💧</span>
           </div>
         </div>
       </div>
       
-      {/* Title */}
-      <h1 style={{textAlign:"center",fontSize:"3rem",marginTop:"2rem",color:"#388E3C",fontWeight:"bold"}}>
-        Join<span style={{color:"#689F38"}}>Eco</span><span style={{color:"#7CB342"}}>Grow</span>
+      {/* JoinEcoGrow Title */}
+      <h1 className="text-5xl font-bold text-center mt-6">
+        <span style={{color: "#388E3C"}}>Join</span>
+        <span style={{color: "#388E3C"}}>Eco</span>
+        <span style={{color: "#7CB342"}}>Grow</span>
       </h1>
-      <div style={{textAlign:"center",marginTop:"0.5rem"}}>
-        <span style={{fontSize:"1.5rem",color:"#29B6F6"}}>💧</span>
-      </div>
       
-      {/* Tagline */}
-      <p style={{textAlign:"center",fontSize:"1.25rem",marginTop:"1rem",color:"#689F38"}}>
+      <p className="text-xl text-center mt-4" style={{color: "#689F38"}}>
         Where Gaming Meets Sustainability
       </p>
       
+      {/* Navigation Links */}
+      <div className="flex justify-center gap-4 mt-8">
+        <a href="/dashboard" className="px-6 py-3 rounded-lg shadow-lg" style={{backgroundColor: "#388E3C", color: "white"}}>
+          Dashboard
+        </a>
+        <a href="/features" className="px-6 py-3 rounded-lg shadow-lg" style={{backgroundColor: "#7CB342", color: "white"}}>
+          Features
+        </a>
+        <a href="/games" className="px-6 py-3 rounded-lg shadow-lg" style={{backgroundColor: "#29B6F6", color: "white"}}>
+          Games
+        </a>
+        <a href="/admin" className="px-6 py-3 rounded-lg shadow-lg" style={{backgroundColor: "#689F38", color: "white"}}>
+          Admin
+        </a>
+      </div>
+      
       {/* Features Grid */}
-      <div style={{display:"grid",gridTemplateColumns:"repeat(auto-fit,minmax(250px,1fr))",gap:"1.5rem",maxWidth:"1200px",margin:"3rem auto",padding:"0 1rem"}}>
-        <div style={{background:"white",padding:"1.5rem",borderRadius:"12px",border:"2px solid #9CCC65",boxShadow:"0 4px 6px rgba(0,0,0,0.1)"}}>
-          <h2 style={{color:"#388E3C",fontSize:"1.5rem",marginBottom:"0.5rem"}}>🌳 Tree Planting</h2>
-          <p style={{color:"#666"}}>91 Features for real-world environmental impact</p>
-        </div>
-        <div style={{background:"white",padding:"1.5rem",borderRadius:"12px",border:"2px solid #9CCC65",boxShadow:"0 4px 6px rgba(0,0,0,0.1)"}}>
-          <h2 style={{color:"#388E3C",fontSize:"1.5rem",marginBottom:"0.5rem"}}>🎮 Gaming Hub</h2>
-          <p style={{color:"#666"}}>55 Eco-gaming features and challenges</p>
-        </div>
-        <div style={{background:"white",padding:"1.5rem",borderRadius:"12px",border:"2px solid #9CCC65",boxShadow:"0 4px 6px rgba(0,0,0,0.1)"}}>
-          <h2 style={{color:"#388E3C",fontSize:"1.5rem",marginBottom:"0.5rem"}}>👥 Community</h2>
-          <p style={{color:"#666"}}>87 Social features for global impact</p>
+      <div className="container mx-auto px-4 mt-12">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+          <div 
+            className="bg-white p-6 rounded-xl shadow-lg border-2 hover:shadow-2xl transition-shadow"
+            style={{borderColor: "#9CCC65"}}
+          >
+            <div className="text-4xl mb-3">🌳</div>
+            <h2 className="text-xl font-semibold mb-2" style={{color: "#388E3C"}}>
+              Tree Planting
+            </h2>
+            <p className="text-gray-600">91 Features for real-world impact</p>
+          </div>
+          
+          <div 
+            className="bg-white p-6 rounded-xl shadow-lg border-2 hover:shadow-2xl transition-shadow"
+            style={{borderColor: "#9CCC65"}}
+          >
+            <div className="text-4xl mb-3">🎮</div>
+            <h2 className="text-xl font-semibold mb-2" style={{color: "#388E3C"}}>
+              Gaming Center
+            </h2>
+            <p className="text-gray-600">55 Eco-gaming features</p>
+          </div>
+          
+          <div 
+            className="bg-white p-6 rounded-xl shadow-lg border-2 hover:shadow-2xl transition-shadow"
+            style={{borderColor: "#9CCC65"}}
+          >
+            <div className="text-4xl mb-3">👥</div>
+            <h2 className="text-xl font-semibold mb-2" style={{color: "#388E3C"}}>
+              Community
+            </h2>
+            <p className="text-gray-600">87 Social features</p>
+          </div>
         </div>
       </div>
       
-      {/* Status */}
-      <div style={{textAlign:"center",marginTop:"3rem",padding:"1rem",background:"white",borderRadius:"50px",maxWidth:"400px",margin:"3rem auto",border:"2px solid #7CB342"}}>
-        <p style={{color:"#388E3C",fontSize:"1.25rem",fontWeight:"bold"}}>
-          🚀 Platform Live - 925+ Features Ready!
-        </p>
+      {/* Status Footer */}
+      <div className="text-center mt-16 pb-8">
+        <div className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-white shadow-lg">
+          <div className="w-3 h-3 bg-green-500 rounded-full animate-pulse"></div>
+          <p className="text-lg font-semibold" style={{color: "#388E3C"}}>
+            Platform Live - 925+ Features Ready
+          </p>
+        </div>
       </div>
     </main>
   )
