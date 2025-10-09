@@ -1,8 +1,8 @@
-﻿export default function Admin() {
+﻿export default function adminPage() {
   return (
-    <div className="p-8">
-      <h1 className="text-3xl font-bold text-[#388E3C]">Admin Panel</h1>
-      <p className="text-[#689F38] mt-4">Manage your platform</p>
+    <div style={{padding:'2rem',minHeight:'100vh',background:'#f5f5f5'}}>
+      <h1 style={{color:'#388E3C',fontSize:'2.5rem'}}>Admin Panel</h1>
+      <a href='/' style={{color:'#29B6F6'}}>← Back to Home</a>
     </div>
   )
 }

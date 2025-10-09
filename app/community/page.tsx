@@ -1,8 +1,8 @@
-﻿export default function Community() {
+﻿export default function communityPage() {
   return (
-    <div className="p-8">
-      <h1 className="text-3xl font-bold text-[#388E3C]">Community Hub</h1>
-      <p className="text-[#689F38] mt-4">Connect with eco-warriors worldwide</p>
+    <div style={{padding:'2rem',minHeight:'100vh',background:'#f5f5f5'}}>
+      <h1 style={{color:'#388E3C',fontSize:'2.5rem'}}>Community Hub</h1>
+      <a href='/' style={{color:'#29B6F6'}}>← Back to Home</a>
     </div>
   )
 }

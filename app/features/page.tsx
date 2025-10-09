@@ -1,8 +1,8 @@
-﻿export default function Features() {
+﻿export default function featuresPage() {
   return (
-    <div className="p-8">
-      <h1 className="text-3xl font-bold text-[#388E3C]">925+ Features</h1>
-      <p className="text-[#689F38] mt-4">Explore our comprehensive feature set</p>
+    <div style={{padding:'2rem',minHeight:'100vh',background:'#f5f5f5'}}>
+      <h1 style={{color:'#388E3C',fontSize:'2.5rem'}}>925+ Features Hub</h1>
+      <a href='/' style={{color:'#29B6F6'}}>← Back to Home</a>
     </div>
   )
 }
